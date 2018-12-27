@@ -1,4 +1,6 @@
 Rails.application.routes.draw do
+  get 'users/signup'
+
   get 'foo/baz'
 
   root 'static_pages#home'
