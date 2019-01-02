@@ -1,9 +1,7 @@
 <footer class="footer">
   <small>
     
-    The <%= link_to image_tag("rails.png", alt: "Rails logo"),
-            'http://rubyonrails.org/' %> Ruby on Rails Tutorial
-    by <a href="http://www.michaelhartl.com/">Michael Hartl</a>
+    The <%= link_to "Ruby on Rails Tutorial", 'http://rubyonrails.org/' %> by <a href="http://www.michaelhartl.com/">Michael Hartl</a>
   </small>
   <nav>
     <ul>
@@ -12,4 +10,6 @@
       <li><a href="http://news.railstutorial.org/">News</a></li>
     </ul>
   </nav>
+  <p> <small>The time now: <%= Time.now %> </small></p>
 </footer>
+<p class="debug_dump"><%= debug params if Rails.env.development? %></p>

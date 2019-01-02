@@ -10,6 +10,8 @@ Rails.application.routes.draw do
   get 'static_pages/about', to: 'static_pages#about'
   
   get 'static_pages/contact', to: 'static_pages#contact'
+  
+  resources :users
 
   #root 'application#hello'
   # The priority is based upon order of creation: first created -> highest priority.

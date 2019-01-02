@@ -1,0 +1,29 @@
+
+<p>
+<div class="row">
+  <aside class="col-md-4">
+    <section class="user_info">
+      <h1>
+        <%= fetchGravatar @user %>
+        <%= @user.name %>
+      </h1>
+      <small> <%= @user.email %> </small>
+      <h5> Since <%= @user.created_at.strftime "%b, %d (%y)" %> </h5>
+    </section>
+  </aside>
+</div>
+
+<!-- User Info -->
+    <table>
+        <tr>
+            <th> Name </th> 
+            <th> Email </th>
+            <th> Since </th>
+        </tr>
+        <tr> 
+            <td> <%= @user.name %></td>
+            <td> <%= @user.email %></td>
+            <td> <%= @user.created_at %></td>
+        </tr>
+    </table>
+</p>
